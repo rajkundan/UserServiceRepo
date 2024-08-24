@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/your_database_name
+      # Or for authenticated connections:
+      # uri: mongodb://username:password@localhost:27017/webservices
+      auto-index-creation: true
+  application:
+    name: RATING-SERVICE
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
