@@ -20,6 +20,7 @@ import com.rlsf.service.HotelService;
 public class HotelController {
 	
 	@Autowired
+
 	HotelService hotelService;
 	
 	//create.
